@@ -7,6 +7,8 @@ Installation process
 2. Create an instance of Azure Communication Services with a Phone Number which can send and receive SMS - https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp
 3. You will need to bind MessageReceiver funtion to Comm. Services - https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/sms/receive-sms?pivots=platform-power
 4. Create an Azure Function App instance to run funtions apps on Azure and Publish code provided in this repo - https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio?tabs=in-process#publish-the-project-to-azure
+Note - You can comment out DataLoader functions app before deployement because it is used in local environemnt to add records to the databse and simulate workflow.
+
 Add following COnfiguraitns settings to your Fn App 
 
     "CosmosDBConnectionSetting": "Your Cosmos Conn String",
