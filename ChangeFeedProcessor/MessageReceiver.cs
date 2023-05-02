@@ -11,6 +11,10 @@ using ChangeFeedProcessor.Services;
 
 namespace ChangeFeedProcessor
 {
+    /// <summary>
+    /// Event Trigger which gets triggers when a message is received from the Communication Services event queue. 
+    /// This is where we can add 2 way SMS logic.
+    /// </summary>
     public static class MessageReceiver
     {
         [FunctionName("MessageReceiver")]

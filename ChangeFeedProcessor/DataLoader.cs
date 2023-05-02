@@ -13,6 +13,10 @@ using ChangeFeedProcessor.Models;
 
 namespace ChangeFeedProcessor
 {
+    /// <summary>
+    /// Function to simulate data addition to Azure Cosmos DB. Please comment this function before publishing. 
+    /// This function can be used locally to satart the workflow. 
+    /// </summary>
     public static class DataLoader
     {
        [FunctionName("DataLoader")]

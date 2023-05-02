@@ -10,6 +10,9 @@ using Microsoft.Extensions.Logging;
 
 namespace ChangeFeedProcessor
 {
+    /// <summary>
+    /// Cosmos DB trigger for Change Feed event listening.
+    /// </summary>
     public class QueueHandler
     {
 

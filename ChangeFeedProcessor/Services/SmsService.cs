@@ -7,14 +7,13 @@ using System.Threading.Tasks;
 
 namespace ChangeFeedProcessor.Services
 {
+    /// <summary>
+    /// SMS service with uses Azure Communication Services to send SMS. Expects Comm. Service instance in Azure.
+    /// </summary>
     public class SmsService
     {
         private readonly SmsClient smsClient;
-        public SmsService()
-        {
-
-            smsClient = new SmsClient(Environment.GetEnvironmentVariable("CommConnectionString"));
-        }
+        public SmsService() => smsClient = new SmsClient(Environment.GetEnvironmentVariable("CommConnectionString"));
 
         public async Task SendMessage(string phoneNumber, string message)
         {
